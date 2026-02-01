@@ -6,7 +6,7 @@ export default function Account() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  // ✅ Fetch Logged In User
+  // Fetch Logged In User
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -22,7 +22,7 @@ export default function Account() {
     fetchUser();
   }, [navigate]);
 
-  // ✅ Logout Function
+  // Logout Function
   const handleLogout = async () => {
     try {
       await API.post("/auth/logout");
@@ -30,6 +30,7 @@ export default function Account() {
       alert("Logout Successful!");
       navigate("/");
     } catch (error) {
+      console.log("Error: ", error)
       alert("Logout Failed");
     }
   };
