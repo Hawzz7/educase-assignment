@@ -17,7 +17,7 @@ app.use(cookieParser());
 /* ✅ Allow Cookies from Frontend */
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://your-frontend-vercel-url.vercel.app",
     credentials: true,
   })
 );
