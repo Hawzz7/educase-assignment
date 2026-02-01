@@ -24,7 +24,14 @@ export default function SignIn() {
   return (
     <div className="min-h-screen flex justify-center bg-gray-100">
       <div className="w-full max-w-sm bg-white px-6 pt-10 pb-6">
-        
+        {/* Back Button */}
+        <button
+          type="button"
+          onClick={() => navigate("/")}
+          className="text-sm text-gray-600 mb-4 flex items-center gap-1 cursor-pointer"
+        >
+          ← Back
+        </button>
         {/* Heading */}
         <h1 className="text-3xl font-bold text-gray-900 leading-snug">
           Signin to your <br /> PopX account
@@ -37,7 +44,6 @@ export default function SignIn() {
 
         {/* Form */}
         <form onSubmit={handleLogin} className="mt-8 space-y-5">
-          
           {/* Email Field */}
           <fieldset className="border rounded-md px-3">
             <legend className="text-sm text-purple-600 font-semibold px-2">
@@ -67,10 +73,7 @@ export default function SignIn() {
           </fieldset>
 
           {/* Button */}
-          <button
-            type="submit"
-            className="btnPrimary"
-          >
+          <button type="submit" className="btnPrimary">
             Login
           </button>
         </form>

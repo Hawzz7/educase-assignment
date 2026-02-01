@@ -37,6 +37,15 @@ export default function Signup() {
   return (
     <div className="min-h-screen flex justify-center bg-gray-100">
       <div className="w-full max-w-sm bg-white px-6 pt-10 pb-6">
+        {/* Back Button */}
+        <button
+          type="button"
+          onClick={() => navigate("/")}
+          className="text-sm text-gray-600 mb-4 flex items-center gap-1 cursor-pointer"
+        >
+          ← Back
+        </button>
+
         {/* Heading */}
         <h1 className="text-3xl font-bold text-gray-900 leading-snug">
           Create your <br /> PopX account
