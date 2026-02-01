@@ -14,10 +14,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-/* ✅ Allow Cookies from Frontend */
 app.use(
   cors({
-    origin: "https://your-frontend-vercel-url.vercel.app",
+    origin: "https://educase-assignment-c6jkqx05h-hawzz7s-projects.vercel.app/",
     credentials: true,
   })
 );
