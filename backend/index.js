@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://educase-assignment-one-zeta.vercel.app/",
+    origin: "https://educase-assignment-one-zeta.vercel.app",
     credentials: true,
   })
 );
